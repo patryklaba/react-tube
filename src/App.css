@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, sans-serif;    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(135deg, #184e68 0%,#388d76 100%);
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 1000px;
+    height: 680px;
+    background: transparent;
+    
+}
+
+.AppWrapper input {
+    display: block;
+    margin: 25px auto;
+    width: 600px;
+    height: 45px;
+    outline: none;
+    padding: 2px 10px;
+    text-indent: 5px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+}
+
+.AppWrapper {
+    height: 100%;
+    position: relative;
+}
+
+.ContentWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.VideoList {
+    width: 35%;
+    height: 550px;
+    overflow: scroll;
+}
+
+.VideoList ul {
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.VideoListItem {
+    width: 95%;
+    height: 120px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.panel {
+    background: rgba(0,0,0, 0.4);
+    border: 1px solid rgba(255,255,255, 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;    
+}
+
+.VideoListItem .media {
+    width: 120px;
+    height: 90px;
+}
+
+.VideoListItem .heading {
+    height: 95px;
+    width: calc(100% - 140px);
+    padding: 10px 5px;
+    overflow: scroll;
+}
+
+.VideoDetail {
+    width: 60%;
+    padding: 0px 25px;
+}
+
+.VideoContainer {
+    width: 550px;
+    height: 310px;
+    margin-bottom: 25px;
+}
+
+.VideoDetail iframe {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.VideoDetail .details {
+    padding: 15px;
+    height: calc(550px - 335px);
+}
+
+.details p {
+    font-weight: 200;
+
+}
