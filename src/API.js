@@ -1,6 +1,4 @@
 import axios from 'axios';
-import KEY from './apiKey';
-
 const URL = 'https://www.googleapis.com/youtube/v3/search';
 
 let config = {
